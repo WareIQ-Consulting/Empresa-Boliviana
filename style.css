@@ -58,8 +58,8 @@ nav a:hover{
     height:100vh;
     position:relative;
     display:flex;
-    align-items:flex-end;
-    padding:100px 60px;
+    align-items:center;
+    padding:140px 60px 80px;
 }
 
 .hero-video{
@@ -89,16 +89,17 @@ nav a:hover{
 }
 
 .subtitle{
-    font-size:22px;
-    margin-bottom:15px;
-    letter-spacing:2px;
+    font-size:16px;
+    margin-bottom:20px;
+    letter-spacing:3px;
 }
 
 .hero h1{
-    font-size:85px;
-    line-height:0.95;
+    font-size:58px;
+    line-height:1;
     font-weight:900;
     margin-bottom:30px;
+    max-width:700px;
 }
 
 .hero-btn{
