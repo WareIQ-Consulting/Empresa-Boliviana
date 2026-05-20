@@ -30,9 +30,14 @@ body{
 }
 
 .logo{
-    font-size:28px;s
-    font-weight:900;
-    letter-spacing:4px;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:45px;
+    width:auto;
+    object-fit:contain;
 }
 
 nav{
