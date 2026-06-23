@@ -1,132 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WareIQ Consulting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WareIQ Consulting</title>
 
-  <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">
-  <img src="logo.png" alt="WareIQ Logo">
-</div>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-    <nav>
-      <a href="#services">SERVICIOS</a>
-      <a href="#about">NOSOTROS</a>
-      <a href="#solutions">SOLUCIONES</a>
-      <a href="#contact">CONTACTO</a>
-    </nav>
+        <div class="logo">
+            <img src="logo.png" alt="WareIQ Logo">
+        </div>
 
-    <div class="menu-btn">☰</div>
-  </header>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="soluciones.html">SOLUCIONES</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
 
-  <!-- HERO -->
-  <section class="hero">
+        <div class="menu-btn">☰</div>
 
-    <div class="overlay"></div>
+    </header>
 
-    <div class="hero-content">
-      <p class="subtitle">OPTIMIZACIÓN EMPRESARIAL</p>
+    <!-- HERO -->
+    <section class="hero">
 
-      <h1>
-        CONSULTORÍA EN <br>
-        INVENTARIOS Y <br>
-        ANÁLISIS DE DATOS
-      </h1>
+        <div class="overlay"></div>
 
-      <button class="hero-btn">
-        VER SERVICIOS
-      </button>
-    </div>
+        <div class="hero-content">
 
-  </section>
+            <p class="subtitle">
+                OPTIMIZACIÓN EMPRESARIAL
+            </p>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
+            <h1>
+                CONSULTORÍA EN <br>
+                INVENTARIOS Y <br>
+                ANÁLISIS DE DATOS
+            </h1>
 
-    <div class="service-card">
-      <h2>Auditoría de Inventarios</h2>
-      <p>
-        Detectamos pérdidas, errores operativos y optimizamos el control de stock.
-      </p>
-    </div>
+            <button class="hero-btn"
+                    onclick="window.location.href='servicios.html'">
+                VER SERVICIOS
+            </button>
 
-    <div class="service-card">
-      <h2>Análisis de Datos</h2>
-      <p>
-        Transformamos datos empresariales en decisiones estratégicas.
-      </p>
-    </div>
+        </div>
 
-    <div class="service-card">
-      <h2>Automatización</h2>
-      <p>
-        Digitalizamos procesos para aumentar productividad y reducir costos.
-      </p>
-    </div>
+    </section>
 
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <div class="about-left">
-      <h2>
-        IMPULSAMOS EMPRESAS CON TECNOLOGÍA Y DATOS
-      </h2>
-    </div>
-
-    <div class="about-right">
-      <p>
-        En WareIQ Consulting ayudamos a empresas a optimizar operaciones,
-        controlar inventarios y tomar decisiones inteligentes mediante análisis de datos.
-      </p>
-    </div>
-
-  </section>
-
-  <!-- SOLUTIONS -->
-  <section class="solutions" id="solutions">
-
-    <div class="solution">
-      <h3>Control Operativo</h3>
-    </div>
-
-    <div class="solution">
-      <h3>Analitica De Datos</h3>
-    </div>
-
-    <div class="solution">
-      <h3>KPIs Empresariales</h3>
-    </div>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-
-    <h2>CONTACTO</h2>
-
-    <p>
-      Transforma tus operaciones con análisis inteligente y control empresarial.
-    </p>
-
-    <button>
-      CONTACTAR
-    </button>
-
-  </section>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
