@@ -289,3 +289,68 @@ nav a:hover{
     }
 
 }
+
+/* HERO INTERNO */
+
+.page-hero{
+    height:50vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    position:relative;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding-top:90px;
+}
+
+.page-hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.65);
+}
+
+.page-hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.page-hero h1{
+    font-size:70px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.page-hero p{
+    font-size:18px;
+    opacity:.8;
+    max-width:700px;
+}
+
+/* FONDOS PARA CADA PAGINA */
+
+.services-banner{
+    background-image:
+    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1974&auto=format&fit=crop');
+}
+
+.about-banner{
+    background-image:
+    url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1974&auto=format&fit=crop');
+}
+
+.solutions-banner{
+    background-image:
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1974&auto=format&fit=crop');
+}
+
+.contact-banner{
+    background-image:
+    url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1974&auto=format&fit=crop');
+}
