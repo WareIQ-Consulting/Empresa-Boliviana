@@ -137,11 +137,17 @@ nav a:hover{
 /* SERVICES */
 
 .services{
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    padding:120px 60px;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:45px;
+
+    padding:140px 80px;
+
     background:#050505;
+
 }
 
 .service-card{
@@ -415,4 +421,42 @@ nav a:hover{
 .contact-banner{
     background-image:
     url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1974&auto=format&fit=crop');
+}
+
+.icon{
+
+    font-size:52px;
+
+    color:#d4a017;
+
+    margin-bottom:10px;
+
+    transition:.4s;
+
+}
+
+.service-card:hover .icon{
+
+    transform:scale(1.15);
+
+    text-shadow:0 0 18px rgba(212,160,23,.7);
+
+}
+
+.arrow{
+
+    margin-top:35px;
+
+    color:#d4a017;
+
+    font-size:34px;
+
+    transition:.4s;
+
+}
+
+.service-card:hover .arrow{
+
+    transform:translateX(12px);
+
 }
