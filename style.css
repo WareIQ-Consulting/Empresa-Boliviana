@@ -547,3 +547,175 @@ nav a:hover{
     color:#999;
 
 }
+
+/* ===========================
+      LOGIN CLIENTES
+=========================== */
+
+.login-section{
+
+    background:#050505;
+
+    padding:120px 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.login-card{
+
+    width:500px;
+
+    background:rgba(20,20,20,.90);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:55px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+}
+
+.login-card:hover{
+
+    border-color:#d4a017;
+
+    box-shadow:
+        0 0 20px rgba(212,160,23,.25),
+        0 20px 45px rgba(0,0,0,.55);
+
+}
+
+.login-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    border-radius:50%;
+
+    background:#d4a017;
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.login-text{
+
+    text-align:center;
+
+    color:#999;
+
+    margin-bottom:40px;
+
+    line-height:1.6;
+
+}
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:#111;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#d4a017;
+
+    box-shadow:0 0 15px rgba(212,160,23,.25);
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    margin-top:20px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    background:#d4a017;
+
+    color:#111;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(212,160,23,.45);
+
+}
