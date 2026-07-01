@@ -460,3 +460,90 @@ nav a:hover{
     transform:translateX(12px);
 
 }
+
+/* ===========================
+   PORTAL DE CLIENTES
+=========================== */
+
+.clients{
+
+    padding:100px 70px;
+
+    background:#050505;
+
+    text-align:center;
+
+}
+
+.clients h2{
+
+    font-size:48px;
+
+    margin-bottom:60px;
+
+    font-weight:800;
+
+}
+
+.client-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:35px;
+
+}
+
+.client-card{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:40px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.client-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#d4a017;
+
+    box-shadow:
+    0 0 20px rgba(212,160,23,.30);
+
+}
+
+.client-card img{
+
+    width:140px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:25px;
+
+}
+
+.client-card h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.client-card p{
+
+    color:#999;
+
+}
