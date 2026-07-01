@@ -145,24 +145,83 @@ nav a:hover{
 }
 
 .service-card{
-    padding:50px;
-    border:1px solid rgba(255,255,255,0.1);
-    transition:0.4s;
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:45px;
+
+    transition:.45s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+}
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,187,0,.08),
+        transparent 60%
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
 }
 
 .service-card:hover{
-    transform:translateY(-10px);
-    border-color:white;
+
+    transform:translateY(-12px);
+
+    border-color:#d4a017;
+
+    box-shadow:
+        0 0 18px rgba(212,160,23,.35),
+        0 0 45px rgba(212,160,23,.15);
+
+}
+
+.service-card:hover::before{
+
+    opacity:1;
+
 }
 
 .service-card h2{
+
+    font-size:34px;
+
+    margin-top:25px;
+
     margin-bottom:20px;
-    font-size:28px;
+
+    font-weight:700;
+
 }
 
 .service-card p{
-    opacity:0.8;
-    line-height:1.7;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:18px;
+
 }
 
 /* ABOUT */
