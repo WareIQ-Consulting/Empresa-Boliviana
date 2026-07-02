@@ -12,13 +12,15 @@ window.addEventListener("scroll", function(){
 //  MODAL LOGIN CONTROL
 // ==============================
 
-const openModalBtn = document.querySelector("#openModal");
 const modal = document.querySelector("#loginModal");
 const closeBtn = document.querySelector(".close");
+const buttons = document.querySelectorAll(".openModal");
 
-// abrir modal
-openModalBtn.addEventListener("click", () => {
-    modal.style.display = "flex";
+// abrir modal desde cualquier botón
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        modal.style.display = "flex";
+    });
 });
 
 // cerrar con X
@@ -26,7 +28,7 @@ closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// cerrar haciendo click fuera
+// cerrar clic fuera
 window.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.style.display = "none";
