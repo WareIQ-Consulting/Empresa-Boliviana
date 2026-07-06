@@ -34,3 +34,10 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+// Cerrar modal con la tecla ESC
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+    }
+});
+
