@@ -16,6 +16,7 @@ const modal = document.querySelector("#loginModal");
 const closeBtn = document.querySelector(".close");
 const buttons = document.querySelectorAll(".openModal");
 const empresaSeleccionada = document.querySelector("#empresaSeleccionada");
+const empresaSelect = document.querySelector("#empresa");
 
 // abrir modal desde cualquier botón
 buttons.forEach(btn => {
@@ -23,9 +24,12 @@ buttons.forEach(btn => {
 
         const empresa = btn.dataset.company;
 
-        empresaSeleccionada.textContent = "Empresa seleccionada: " + empresa;
+empresaSeleccionada.textContent = "Empresa seleccionada: " + empresa;
 
-        modal.style.display = "flex";
+// Seleccionar automáticamente la empresa
+empresaSelect.value = empresa;
+
+modal.style.display = "flex";
     });
 });
 
