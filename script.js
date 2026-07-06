@@ -15,10 +15,16 @@ window.addEventListener("scroll", function(){
 const modal = document.querySelector("#loginModal");
 const closeBtn = document.querySelector(".close");
 const buttons = document.querySelectorAll(".openModal");
+const empresaSeleccionada = document.querySelector("#empresaSeleccionada");
 
 // abrir modal desde cualquier botón
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
+
+        const empresa = btn.dataset.company;
+
+        empresaSeleccionada.textContent = "Empresa seleccionada: " + empresa;
+
         modal.style.display = "flex";
     });
 });
