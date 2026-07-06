@@ -125,4 +125,26 @@ if(password === ""){
 
 }
 
+    const usuarioValido = usuarios.find(user =>
+
+    user.empresa === empresa &&
+    user.usuario === usuario &&
+    user.password === password
+
+);
+
+if(!usuarioValido){
+
+    mensajeLogin.style.color = "#ff4d4d";
+
+    mensajeLogin.textContent = "Usuario o contraseña incorrectos.";
+
+    return;
+
+}
+
+mensajeLogin.style.color = "#00c853";
+
+mensajeLogin.textContent = "Bienvenido " + usuario + ".";
+    
 });
