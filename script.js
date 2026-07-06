@@ -24,12 +24,16 @@ buttons.forEach(btn => {
 
         const empresa = btn.dataset.company;
 
-empresaSeleccionada.textContent = "Empresa seleccionada: " + empresa;
+        console.log(empresa);
 
-// Seleccionar automáticamente la empresa
-empresaSelect.value = empresa;
+        empresaSeleccionada.textContent = "Empresa seleccionada: " + empresa;
 
-modal.style.display = "flex";
+        empresaSelect.value = empresa;
+
+        console.log(empresaSelect.value);
+
+        modal.style.display = "flex";
+
     });
 });
 
