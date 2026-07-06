@@ -145,6 +145,13 @@ if(!usuarioValido){
 
 mensajeLogin.style.color = "#00c853";
 
-mensajeLogin.textContent = "Bienvenido " + usuario + ".";
+mensajeLogin.textContent = `Bienvenido ${usuario}.`;
+
+    
+    setTimeout(() => {
+
+    window.location.href = usuarioValido.dashboard;
+
+},1500);
     
 });
