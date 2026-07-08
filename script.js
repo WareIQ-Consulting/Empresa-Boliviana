@@ -18,7 +18,7 @@ const usuarios = [
         empresa: "Compañía de Alimentos LTDA. (Bolivia)",
         usuario: "admin_alimentos",
         password: "123456",
-        dashboard: "dashboard-alimentos.html"
+        dashboard: "apps-alimentos.html"
     },
 
     {
