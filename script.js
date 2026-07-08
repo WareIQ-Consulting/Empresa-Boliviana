@@ -102,7 +102,7 @@ document.addEventListener("keydown", (e) => {
 loginForm.addEventListener("submit", function(e){
 
     e.preventDefault();
-
+console.log("Formulario enviado");
     const empresa = empresaSelect.value;
     const usuario = usuarioInput.value.trim();
     const password = passwordInput.value.trim();
