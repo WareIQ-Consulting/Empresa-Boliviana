@@ -1,0 +1,77 @@
+/*======================================
+        APPS PORTAL
+======================================*/
+
+body{
+
+    margin:0;
+    background:#0b0f16;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/*======================================
+        WELCOME
+======================================*/
+
+.welcome-apps{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:60px auto 20px;
+
+    background:linear-gradient(135deg,#141b25,#0f141d);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+}
+
+.welcome-left h2{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.welcome-left p{
+
+    color:#b8b8b8;
+
+    font-size:18px;
+
+}
+
+.system-status{
+
+    text-align:right;
+
+}
+
+.system-status h3{
+
+    color:#2ecc71;
+
+    margin-bottom:8px;
+
+}
+
+.system-status p{
+
+    color:#b8b8b8;
+
+}
