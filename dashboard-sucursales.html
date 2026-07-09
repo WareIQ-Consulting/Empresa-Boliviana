@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestión de Sucursales | WareIQ</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="header-left">
+
+        <img src="logo.png" class="header-logo">
+
+        <div>
+
+            <h2>WareIQ Consulting</h2>
+
+            <span>Gestión de Sucursales</span>
+
+        </div>
+
+    </div>
+
+    <div class="header-right">
+
+        <span>👤 admin_alimentos</span>
+
+        <a href="portal.html" class="logout-btn">
+
+            Cerrar sesión
+
+        </a>
+
+    </div>
+
+</header>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+
+        <h3>Módulos</h3>
+
+        <ul>
+
+            <li class="menu-item active"
+                data-section="ejecutivo">
+
+                📊 Dashboard Ejecutivo
+
+            </li>
+
+            <li class="menu-item"
+                data-section="sucursal1">
+
+                🏢 Dashboard Sucursal 1
+
+            </li>
+
+            <li class="menu-item"
+                data-section="sucursal2">
+
+                🏢 Dashboard Sucursal 2
+
+            </li>
+
+            <li class="menu-item"
+                data-section="sucursal3">
+
+                🏢 Dashboard Sucursal 3
+
+            </li>
+
+            <li class="menu-item"
+                data-section="sucursal4">
+
+                🏢 Dashboard Sucursal 4
+
+            </li>
+
+            <li class="menu-item"
+                data-section="reportes">
+
+                📄 Reportes
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-content">
+
+        <div id="contenidoDashboard"></div>
+
+    </main>
+
+</div>
+
+<script src="dashboard-sucursales.js"></script>
+
+</body>
+
+</html>
