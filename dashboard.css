@@ -218,24 +218,28 @@ overflow:auto;
 }
 .powerbi-container{
 
-    height:600px;
-
     margin-top:40px;
+
+    height:750px;
 
     border-radius:20px;
 
+    overflow:hidden;
+
     background:#111827;
 
-    border:2px dashed rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.08);
 
-    display:flex;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 
-    justify-content:center;
+}
 
-    align-items:center;
+.powerbi-container iframe{
 
-    font-size:22px;
+    width:100%;
 
-    color:#888;
+    height:100%;
+
+    border:none;
 
 }
