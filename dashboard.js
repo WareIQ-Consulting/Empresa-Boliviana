@@ -29,11 +29,17 @@ const contenido = document.querySelector("#contenidoDashboard");
 // DASHBOARD EJECUTIVO
 // ==============================
 
-function cargarDashboard(){
-
 contenido.innerHTML = `
 
 <h1>Dashboard Ejecutivo</h1>
+
+<div class="powerbi-container">
+
+${dashboardEjecutivo}
+
+</div>
+
+`;
 
 <p>
 
