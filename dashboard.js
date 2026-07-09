@@ -1,3 +1,24 @@
+// =======================================
+// DASHBOARDS POWER BI
+// =======================================
+
+const dashboardEjecutivo = `
+<iframe
+    title="WareIQ Consulting - Delizia"
+    src="https://app.powerbi.com/reportEmbed?reportId=a4e1e8b9-643d-40b4-a987-6979c568927b&autoAuth=true&ctid=883d2495-478a-4fad-8d9e-2ae23023c5f1"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+`;
+
+const dashboardObservaciones = `
+<div style="display:flex;justify-content:center;align-items:center;height:100%;font-size:22px;color:#888;">
+    Próximamente Dashboard de Observaciones
+</div>
+`;
+
 // ==============================
 // CONTENEDOR PRINCIPAL
 // ==============================
@@ -59,13 +80,14 @@ Bienvenido al módulo de Auditorías de Almacenes y Bodegas.
 
 <div class="powerbi-container">
 
-Aquí aparecerá el Dashboard Ejecutivo de Power BI
+${dashboardEjecutivo}
 
 </div>
 
 `;
 
 }
+
 
 function cargarObservaciones(){
 
@@ -85,7 +107,7 @@ Seguimiento de todas las observaciones registradas.
 
 <div class="powerbi-container">
 
-Aquí aparecerá el Dashboard de Observaciones
+${dashboardObservaciones}
 
 </div>
 
