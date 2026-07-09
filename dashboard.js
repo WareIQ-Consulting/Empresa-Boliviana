@@ -3,14 +3,13 @@
 // =======================================
 
 const dashboardEjecutivo = `
+
 <iframe
     title="WareIQ Consulting - Delizia"
-    src="https://app.powerbi.com/reportEmbed?reportId=a4e1e8b9-643d-40b4-a987-6979c568927b&autoAuth=true&ctid=883d2495-478a-4fad-8d9e-2ae23023c5f1"
-    width="100%"
-    height="100%"
-    frameborder="0"
-    allowfullscreen>
+    src="https://app.powerbi.com/view?r=eyJrIjoiZWQzNWJhYzgtM2M0OS00N2ZjLTk0ZWYtODQ3OTZkMTg2MDc4IiwidCI6Ijg4M2QyNDk1LTQ3OGEtNGZhZC04ZDllLTJhZTIzMDIzYzVmMSIsImMiOjR9"
+    allowfullscreen="true">
 </iframe>
+
 `;
 
 const dashboardObservaciones = `
