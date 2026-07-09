@@ -61,19 +61,25 @@ Auditorías de Almacenes
 
     <ul>
 
-        <li class="active">
+        <li class="menu-item active"
+
+            data-section="dashboard">
 
             📊 Dashboard Ejecutivo
 
         </li>
 
-        <li>
+        <li class="menu-item"
+
+            data-section="observaciones">
 
             📋 Observaciones Auditoría
 
         </li>
 
-        <li>
+        <li class="menu-item"
+
+            data-section="reportes">
 
             📄 Reportes
 
@@ -85,64 +91,16 @@ Auditorías de Almacenes
 
 <main class="dashboard-content">
 
-    <h1>
-
-        Dashboard Ejecutivo
-
-    </h1>
-
-    <p>
-
-        Bienvenido al módulo de Auditorías de Almacenes y Bodegas.
-
-    </p>
-
-    <div class="kpi-grid">
-
-        <div class="kpi-card">
-
-            <h2>125</h2>
-
-            <span>Auditorías Realizadas</span>
-
-        </div>
-
-        <div class="kpi-card">
-
-            <h2>92%</h2>
-
-            <span>Cumplimiento</span>
-
-        </div>
-
-        <div class="kpi-card">
-
-            <h2>18</h2>
-
-            <span>Observaciones Abiertas</span>
-
-        </div>
-
-        <div class="kpi-card">
-
-            <h2>207</h2>
-
-            <span>Observaciones Cerradas</span>
-
-        </div>
-
-    </div>
-
-    <div class="powerbi-container">
-
-        Aquí aparecerá el Dashboard de Power BI
+    <div id="contenidoDashboard">
 
     </div>
 
 </main>
 
 </div>
-
+    
+<script src="dashboard.js"></script>
+    
 </body>
 
 </html>
