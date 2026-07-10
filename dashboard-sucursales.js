@@ -60,18 +60,13 @@ function dashboardEjecutivo(){
 
         <div class="powerbi-container">
 
-            <div style="display:flex;
-                        justify-content:center;
-                        align-items:center;
-                        height:100%;
-                        font-size:28px;">
+    <iframe
+        title="Devoluciones"
+        src="https://app.powerbi.com/view?r=eyJrIjoiOTllMTg3YTQtZTZhOS00ZGI0LTg0NjAtODRhM2MxMjEyZmMxIiwidCI6Ijg4M2QyNDk1LTQ3OGEtNGZhZC04ZDllLTJhZTIzMDIzYzVmMSIsImMiOjR9"
+        allowfullscreen>
+    </iframe>
 
-                📊 Aquí irá el Dashboard Ejecutivo
-
-            </div>
-
-        </div>
-
+</div>
     `;
 
 }
