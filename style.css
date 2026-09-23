@@ -950,3 +950,120 @@ nav a:hover{
     min-height:24px;
 
 }
+
+/* =========================================
+   CINTA ANIMADA DE SERVICIOS
+========================================= */
+
+.services-ticker{
+    position:absolute;
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:rgba(5,5,5,0.55);
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+    border-top:1px solid rgba(255,255,255,0.10);
+
+    z-index:5;
+}
+
+
+/* CONTENEDOR QUE SE MUEVE */
+
+.ticker-track{
+    display:flex;
+
+    width:max-content;
+
+    animation:tickerMove 32s linear infinite;
+}
+
+
+/* CADA BLOQUE */
+
+.ticker-content{
+    display:flex;
+    align-items:center;
+
+    flex-shrink:0;
+
+    white-space:nowrap;
+}
+
+
+/* TEXTO */
+
+.ticker-content span{
+    font-family:'Montserrat', sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    color:rgba(255,255,255,.88);
+
+    margin:0 28px;
+}
+
+
+/* SEPARADORES */
+
+.ticker-content .separator{
+    color:#d4a017;
+
+    font-size:11px;
+
+    margin:0 5px;
+}
+
+
+/* MOVIMIENTO */
+
+@keyframes tickerMove{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+
+/* PAUSA CUANDO PASAS EL MOUSE */
+
+.services-ticker:hover .ticker-track{
+    animation-play-state:paused;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .services-ticker{
+        height:50px;
+    }
+
+    .ticker-content span{
+        font-size:11px;
+        letter-spacing:1.5px;
+        margin:0 18px;
+    }
+
+}
