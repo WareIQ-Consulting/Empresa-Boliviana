@@ -1112,3 +1112,212 @@ nav a:hover{
     }
 
 }
+
+/* =========================================
+   WAREIQ - TARJETAS PREMIUM DE CLIENTES
+========================================= */
+
+.clients {
+    padding: 100px 5%;
+    background: #050505;
+}
+
+.clients > h2 {
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* DISTRIBUCIÓN */
+
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* TARJETA */
+
+.client-grid .client-card {
+    background: linear-gradient(145deg, #191919, #101010);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 22px;
+    padding: 25px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    cursor: default;
+    transition: transform .35s, border-color .35s,
+                box-shadow .35s;
+}
+
+.client-grid .client-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(212,160,23,.55);
+    box-shadow: 0 18px 40px rgba(0,0,0,.4);
+}
+
+/* LOGO Y ESTADO */
+
+.client-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.client-logo {
+    width: 115px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #242424;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.client-grid .client-logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0;
+}
+
+.client-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    background: rgba(38,180,112,.10);
+    color: #64dda0;
+    border: 1px solid rgba(38,180,112,.2);
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.client-status::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: #4ade80;
+    border-radius: 50%;
+}
+
+/* NOMBRE */
+
+.client-details {
+    margin-bottom: 26px;
+    flex-grow: 1;
+}
+
+.client-grid .client-details h3 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.client-grid .client-location {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* PANEL */
+
+.client-dashboard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid rgba(255,255,255,.09);
+    padding: 20px 0;
+    color: #bcbcbc;
+    font-size: 13px;
+}
+
+.client-dashboard span:first-child {
+    color: #d4a017;
+    font-size: 22px;
+}
+
+/* BOTÓN DORADO */
+
+.client-grid .client-btn {
+    width: 100%;
+    padding: 15px 12px;
+    background: #d4a017;
+    border: 1px solid #d4a017;
+    border-radius: 10px;
+    color: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: background .3s, transform .3s,
+                box-shadow .3s;
+}
+
+.client-grid .client-btn:hover {
+    background: #edb52c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212,160,23,.25);
+}
+
+.client-grid .client-btn:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+.client-btn span {
+    font-size: 18px;
+    transition: transform .3s;
+}
+
+.client-btn:hover span {
+    transform: translate(3px,-3px);
+}
+
+/* TABLET */
+
+@media (max-width: 1150px) {
+    .client-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .clients {
+        padding: 65px 20px;
+    }
+
+    .client-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .client-grid .client-card {
+        padding: 24px;
+    }
+}
