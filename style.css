@@ -1321,3 +1321,365 @@ nav a:hover{
         padding: 24px;
     }
 }
+
+
+/* ==========================================
+   WAREIQ CONSULTING - RESPONSIVE
+   TABLET Y CELULAR
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+.navbar .menu-btn {
+    display: none;
+}
+
+/* TABLETS */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        height: 76px;
+        padding: 0 24px;
+        grid-template-columns: 1fr auto;
+    }
+
+    .navbar .logo img {
+        max-width: 155px;
+        max-height: 58px;
+    }
+
+    .navbar .menu-btn {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .navbar nav {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 12px 24px 24px;
+        background: rgba(9,9,9,.96);
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+        border-bottom: 1px solid rgba(255,255,255,.12);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: opacity .25s, transform .25s,
+                    visibility .25s;
+    }
+
+    .navbar.menu-open nav {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .navbar nav a {
+        display: block;
+        padding: 16px 8px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .hero {
+        padding: 120px 36px 90px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 5.5vw, 58px);
+    }
+
+    .services {
+        padding: 85px 36px;
+        gap: 24px;
+    }
+
+    .about {
+        padding: 85px 36px;
+        gap: 28px;
+    }
+
+    .about h2 {
+        font-size: clamp(30px, 5vw, 48px);
+    }
+
+    .contact {
+        padding: 95px 36px;
+    }
+
+    .contact h2 {
+        font-size: 48px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(36px, 6vw, 60px);
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 70px;
+        padding: 0 18px;
+    }
+
+    .navbar .logo img {
+        max-width: 145px;
+        max-height: 52px;
+    }
+
+    .hero {
+        min-height: 100svh;
+        height: auto;
+        padding: 115px 22px 100px;
+        background-position: 58% center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .hero h1 {
+        font-size: clamp(27px, 7.4vw, 42px);
+        line-height: 1.12;
+        letter-spacing: -.7px;
+        overflow-wrap: anywhere;
+        margin-bottom: 28px;
+    }
+
+    .hero-btn {
+        padding: 16px 24px;
+        min-height: 48px;
+        font-size: 12px;
+    }
+
+    .services-ticker {
+        height: 48px;
+    }
+
+    .ticker-content span {
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin: 0 14px;
+    }
+
+    .page-hero {
+        height: auto;
+        min-height: 320px;
+        padding: 105px 22px 55px;
+    }
+
+    .page-hero-content {
+        width: 100%;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(30px, 8vw, 42px);
+        line-height: 1.12;
+        overflow-wrap: anywhere;
+    }
+
+    .page-hero p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .services {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 55px 20px;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 28px 24px;
+    }
+
+    .service-card h2 {
+        font-size: 25px;
+        line-height: 1.25;
+    }
+
+    .service-card p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 65px 22px;
+        gap: 25px;
+    }
+
+    .about h2 {
+        font-size: clamp(28px, 8vw, 38px);
+        line-height: 1.2;
+    }
+
+    .about p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .solutions {
+        grid-template-columns: 1fr;
+    }
+
+    .solution {
+        height: 280px;
+        padding: 25px;
+    }
+
+    .solution h3 {
+        font-size: 25px;
+    }
+
+    .contact {
+        padding: 65px 22px;
+    }
+
+    .contact h2 {
+        font-size: 36px;
+    }
+
+    .contact p {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+        margin-bottom: 25px;
+    }
+
+    .contact button {
+        width: 100%;
+        max-width: 320px;
+        min-height: 48px;
+    }
+
+    /* PORTAL DE CLIENTES */
+
+    .clients {
+        padding: 60px 18px;
+    }
+
+    .clients > h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 35px;
+    }
+
+    .client-grid {
+        grid-template-columns: minmax(0,1fr);
+        gap: 18px;
+    }
+
+    .client-grid .client-card {
+        padding: 22px;
+    }
+
+    .client-card-top {
+        margin-bottom: 22px;
+    }
+
+    .client-grid .client-btn {
+        min-height: 48px;
+    }
+
+    /* MODAL LOGIN */
+
+    .modal {
+        padding: 15px;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 480px;
+        max-height: calc(100dvh - 30px);
+        overflow-y: auto;
+        padding: 28px 20px;
+        margin: auto;
+    }
+
+    .modal-content h2 {
+        font-size: 25px;
+        padding-right: 25px;
+    }
+
+    .modal-content p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .modal-content label {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    .modal-content input,
+    .modal-content select {
+        width: 100%;
+        min-width: 0;
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    .modal-content button {
+        min-height: 48px;
+        margin-top: 20px;
+    }
+
+    .close {
+        right: 16px;
+        top: 12px;
+    }
+}
+
+/* ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
