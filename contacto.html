@@ -13,20 +13,32 @@
 
 <body>
 
+
 <header class="navbar">
 
     <div class="logo">
-        <img src="logo.png" alt="WareIQ Logo">
+        <a href="index.html">
+            <img src="logo.png" alt="WareIQ Consulting">
+        </a>
     </div>
 
-    <nav>
+    <nav id="mainNav" aria-label="Navegación principal">
         <a href="index.html">INICIO</a>
         <a href="nosotros.html">NOSOTROS</a>
         <a href="contacto.html">CONTACTO</a>
         <a href="portal.html">CLIENTES</a>
     </nav>
 
+    <button class="menu-btn"
+            type="button"
+            aria-label="Abrir menú"
+            aria-controls="mainNav"
+            aria-expanded="false">
+        ☰
+    </button>
+
 </header>
+
 <section class="page-hero contact-banner">
 
     <div class="page-hero-content">
